@@ -1,6 +1,6 @@
 [project]
 name = "earning-api"
-version = "0.1.0"
+version = "0.1.1"
 description = "Earnings API for Nakamoto Mining"
 authors = [
     {name = "Eddie Nakamoto"}
