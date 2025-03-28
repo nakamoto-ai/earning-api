@@ -17,7 +17,7 @@ class EarningService:
         self.db = db
 
     def add_earning(self, earning_list: EarningList) -> int:
-        """Add a list of people to the database."""
+        """Add a list of earnings to the database."""
         added_count = 0
         for earning in earning_list.earnings:
             try:
@@ -32,7 +32,7 @@ class EarningService:
         return added_count
 
     def get_earning(self, since: Optional[str] = None) -> list[Earning]:
-        """Retrieve all people from the database."""
+        """Retrieve all earnings from the database."""
         if since:
             try:
                 datetime.strptime(since, "%Y-%m-%d")
